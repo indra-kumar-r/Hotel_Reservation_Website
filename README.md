@@ -65,6 +65,7 @@ npm install
 cd ../client
 npm install
 </code></pre></li>
+
 <li><p><strong>Set up environment variables:</strong></p>
 <p>Create a <code>.env</code> file in the <code>server</code> directory with the following variables:</p>
 <pre><code>PORT=5000
@@ -81,6 +82,7 @@ npm start
 cd ../client
 npm start
 </code></pre>
+
 <p>The server will be running on <code>http://localhost:5000</code> and the client on <code>http://localhost:3000</code>.</p></li>
 
 </ol>
@@ -134,6 +136,3 @@ npm start
     <li>Push to the branch (<code>git push origin feature/your-feature-name</code>).</li>
     <li>Open a pull request.</li>
 </ol>
-
-<h2 id="license">License</h2>
-<p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
