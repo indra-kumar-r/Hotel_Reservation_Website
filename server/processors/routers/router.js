@@ -3,6 +3,6 @@ import * as controller from "../controllers/controller.js";
 
 const router = Router();
 
-router.get("", controller.test);
+router.post("/reservation", controller.p_reservation);
 
 export default router;
