@@ -1,6 +1,9 @@
-const mongoose = require("mongoose");
-require("dotenv").config();
+import { connect } from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-const db = mongoose.connect(process.env.MONGOOSE);
+const db = connect(process.env.MONGOOSE_URI, {
+  dbName: "Restaurant",
+});
 
-module.exports = db;
+export default db;
