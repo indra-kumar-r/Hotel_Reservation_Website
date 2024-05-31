@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Account from "./pages/Account";
 import "./styles/global.scss";
 import Layout from "./components/Layout";
+import NotFound from "./pages/NotFound";
+import Redirect from "./pages/Redirect";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path={"account"} element={<Account />} />
         </Route>
+        <Route path={"redirect"} element={<Redirect />} />
+        <Route path={"*"} element={<NotFound />} />
       </Routes>
     </>
   );
